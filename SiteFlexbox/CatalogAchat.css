@@ -1,0 +1,169 @@
+.product-filter {
+	display: flex;
+	padding: 30px 0;
+}
+
+.Filter {
+    display: flex;
+	align-self: flex-end;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	
+	padding: 2%;
+	flex: 1 19%;
+	
+    background-color:rgba(0, 0, 0, 0.7) ;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+	width: 100%;
+}
+
+.product-info {
+	margin-top: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.Filter by {
+    display: flex;
+    flex-direction: column;
+}
+
+.Filter by :first-child {
+	padding-right: 20px;
+}
+
+label {
+
+    color: rgb(14, 8, 8);
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 300;
+	flex: 1;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+h5 {
+	font-weight: 500;
+	line-height: 1.7em;
+	color: rgb(255, 255, 255,0.7);
+}
+
+h6 {
+    color:rgb(255, 255, 255,0.7);
+	font-size: 14px;
+}
+
+body {
+	margin: 0 auto;
+	width: 55%;
+	max-width: 1240px;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../SiteFlexbox/IMGSite/fondEcranjardin2.jpg");
+	/* background-size: 1520px; */
+	/* background-size: cover; */
+}
+
+footer{
+	background: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	color: rgb(255, 255, 255,0.7);
+	padding-top: 15px;
+}
+
+nav, .box{ /*header & footer*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+footer a{
+	color: rgb(255, 255, 255,0.7);
+	/* z-index: 1; */
+	text-decoration: none;
+	margin: 0%;
+}
+
+/* Horloge */
+.heure{
+	/* display: inline-block; */
+	display: flex;
+	width: 190px;
+	justify-content: space-between;
+}
+/* fin horloge */
+
+header a{
+	color: rgb(255, 255, 255,0.7);
+	z-index: 1;
+	text-decoration: none;
+	margin: 0%;
+}
+
+@media ( max-width: 920px ) {
+	
+	.product-card {
+		flex: 1 21%;
+	}
+	
+	.products .product-card:first-child, 
+	.products .product-card:nth-child(2) {
+		flex: 2 46%;
+	}
+	
+}
+
+@media ( max-width: 600px ) {
+	
+	.product-card {
+		flex: 1 46%;
+	}
+	
+}
+
+@media ( max-width: 480px ) {
+	
+	/* h1 {
+		margin-bottom: 20px;
+	} */
+	
+	.product-filter {
+		flex-direction: column;
+	}
+	
+	.sort {
+		align-self: flex-start;
+	}
+	
+}
+.copyright{
+   align-items: flex-end;
+	padding: 5px 0;
+	color: rgba(0, 0, 0, 0.7);
+
+}
+
